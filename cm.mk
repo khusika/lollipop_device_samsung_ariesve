@@ -1,8 +1,18 @@
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit GSM common stuff
+$(call inherit-product, vendor/aicp/configs/gsm.mk)
+
+# Inherit AICP common stuff.
+$(call inherit-product, vendor/aicp/configs/common.mk)
 
 # Inherit device configuration
-$(call inherit-product, $(LOCAL_PATH)/full_ariesve.mk)
+$(call inherit-product, device/samsung/ariesve/full_ariesve.mk)
+
+# ariesve overlay
+PRODUCT_PACKAGE_OVERLAYS += device/samsung/ariesve/overlay
+
+# boot animation
+PRODUCT_COPY_FILES += \
+    vendor/aicp/prebuilt/bootanimation/bootanimation_480_854.zip:system/media/bootanimation.zip
 
 # This device is hdpi
 PRODUCT_AAPT_CONFIG := normal hdpi
@@ -11,7 +21,7 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 PRODUCT_RELEASE_NAME := ariesve
 
 # Setup device configuration
-PRODUCT_NAME := cm_ariesve
+PRODUCT_NAME := aicp_ariesve
 PRODUCT_DEVICE := ariesve
 PRODUCT_BRAND := Samsung
 PRODUCT_MANUFACTURER := Samsung

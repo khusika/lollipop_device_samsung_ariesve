@@ -65,3 +65,10 @@ mm.enable.smoothstreaming=true
 
 # Enable High-End graphic effects
 persist.sys.force_highendgfx=true
+
+# Hardware info
+ro.device.chipset=Qualcomm Snapdragon MSM8255T
+ro.device.gpu=Qualcomm Adreno 205
+ro.device.front_cam=0.3 MegaPixel
+ro.device.rear_cam=5.0 MegaPixel
+ro.device.screen_res=480 x 800
