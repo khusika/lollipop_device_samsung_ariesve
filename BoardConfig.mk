@@ -136,6 +136,7 @@ BOARD_HAVE_SAMSUNG_AUDIO := true
 BOARD_USES_LEGACY_ALSA_AUDIO := true
 AUDIO_FEATURE_ENABLED_INCALL_MUSIC := false
 AUDIO_FEATURE_ENABLED_COMPRESS_VOIP := false
+AUDIO_FEATURE_ENABLED_PROXY_DEVICE := false
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
@@ -197,6 +198,7 @@ BOARD_SEPOLICY_UNION += \
     geomagneticd.te \
     healthd.te \
     init.te \
+    kernel.te \
     mac_update.te \
     mediaserver.te \
     netd.te \
