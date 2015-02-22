@@ -1,8 +1,12 @@
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common BeanStalk stuff.
+$(call inherit-product, vendor/beanstalk/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/full_ariesve.mk)
+
+# boot animation
+PRODUCT_COPY_FILES += \
+    vendor/beanstalk/prebuilt/common/bootanimation/480.zip:system/media/bootanimation.zip
 
 # This device is hdpi
 PRODUCT_AAPT_CONFIG := normal hdpi
@@ -11,7 +15,7 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 PRODUCT_RELEASE_NAME := ariesve
 
 # Setup device configuration
-PRODUCT_NAME := cm_ariesve
+PRODUCT_NAME := bs_ariesve
 PRODUCT_DEVICE := ariesve
 PRODUCT_BRAND := Samsung
 PRODUCT_MANUFACTURER := Samsung
