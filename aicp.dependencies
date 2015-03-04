@@ -1,0 +1,27 @@
+[
+  {
+   "repository":  "PAC-msm7x30/android_kernel_samsung_msm7x30-common",
+   "target_path": "kernel/samsung/msm7x30-common",
+   "branch":      "pac-5.0"
+  },
+  {
+   "repository":  "AICP/proprietary_vendor_samsung",
+   "target_path": "vendor/samsung",
+   "branch":      "lp5.0"
+  },
+  {
+   "repository":  "PAC-msm7x30/android_hardware_qcom_audio-caf_msm7x30",
+   "target_path": "hardware/qcom/audio-caf/msm7x30",
+   "branch":      "pac-5.0"
+  },
+  {
+   "repository":  "PAC-msm7x30/android_hardware_qcom_display-caf_msm7x30",
+   "target_path": "hardware/qcom/display-caf/msm7x30",
+   "branch":      "pac-5.0"
+  },
+  {
+   "repository":  "PAC-msm7x30/android_hardware_qcom_media-caf_msm7x30",
+   "target_path": "hardware/qcom/media-caf/msm7x30",
+   "branch":      "pac-5.0"
+  }
+]
