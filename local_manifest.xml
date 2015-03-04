@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
-  <project path="device/samsung/ancora" name="khusika/lollipop_device_samsung_ancora" remote="github" revision="aicp-lp" />
-  <project path="device/samsung/ariesve" name="khusika/lollipop_device_samsung_ariesve" remote="github" revision="aicp-lp" />
-</manifest>
