@@ -20,6 +20,7 @@ PRODUCT_BOOT_JARS += qcmediaplayer
 # Boot animation
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
+TARGET_BOOTANIMATION_HALF_RES := true
 
 # Bootsplash image
 PRODUCT_COPY_FILES += \
