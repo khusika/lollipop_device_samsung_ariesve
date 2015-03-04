@@ -11,8 +11,7 @@ $(call inherit-product, device/samsung/ariesve/full_ariesve.mk)
 PRODUCT_PACKAGE_OVERLAYS += device/samsung/ariesve/overlay
 
 # boot animation
-PRODUCT_COPY_FILES += \
-    vendor/aicp/prebuilt/bootanimation/bootanimation_480_854.zip:system/media/bootanimation.zip
+-include vendor/aicp/configs/bootanimation.mk
 
 # This device is hdpi
 PRODUCT_AAPT_CONFIG := normal hdpi
