@@ -4,10 +4,6 @@ $(call inherit-product, vendor/bliss/config/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/full_ariesve.mk)
 
-# This device is hdpi
-PRODUCT_AAPT_CONFIG := normal hdpi
-PRODUCT_AAPT_PREF_CONFIG := hdpi
-
 # boot animation
 PRODUCT_COPY_FILES += \
     vendor/bliss/prebuilt/common/bootanimation/480.zip:system/media/bootanimation.zip
