@@ -8,10 +8,6 @@ $(call inherit-product, $(LOCAL_PATH)/full_ariesve.mk)
 PRODUCT_COPY_FILES += \
     vendor/mk/prebuilt/common/bootanimation/480.zip:system/media/bootanimation.zip
 
-# This device is hdpi
-PRODUCT_AAPT_CONFIG := normal hdpi
-PRODUCT_AAPT_PREF_CONFIG := hdpi
-
 PRODUCT_RELEASE_NAME := ariesve
 
 # Setup device configuration
