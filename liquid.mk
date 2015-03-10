@@ -4,6 +4,7 @@ $(call inherit-product, vendor/liquid/config/common_phone.mk)
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/full_ariesve.mk)
 
+<<<<<<< HEAD:liquid.mk
 # boot animation
 PRODUCT_COPY_FILES += \
     vendor/liquid/prebuilt/common/bootanimation/480.zip:system/media/bootanimation.zip
@@ -12,6 +13,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_AAPT_CONFIG := normal hdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
+=======
+>>>>>>> 071f434f35283df76bc68b8153e635063d868bb2:cm.mk
 PRODUCT_RELEASE_NAME := ariesve
 
 # Setup device configuration
