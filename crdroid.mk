@@ -1,5 +1,5 @@
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common CRDROID stuff.
+$(call inherit-product, vendor/crdroid/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, $(LOCAL_PATH)/full_ariesve.mk)
@@ -7,7 +7,7 @@ $(call inherit-product, $(LOCAL_PATH)/full_ariesve.mk)
 PRODUCT_RELEASE_NAME := ariesve
 
 # Setup device configuration
-PRODUCT_NAME := cm_ariesve
+PRODUCT_NAME := crdroid_ariesve
 PRODUCT_DEVICE := ariesve
 PRODUCT_BRAND := Samsung
 PRODUCT_MANUFACTURER := Samsung
